@@ -1,0 +1,107 @@
+/* footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #7d9d9c;
+  }
+  
+  
+  
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #7d9d9c;
+    background-color: #576F72;
+    color: #F0EBE3;
+  }
+  
+  .footer-bottom a {
+    color: #F0EBE3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-bottom a:hover {
+    color: #7d9d9c;
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+  /* footer.css */
+.footer-contact {
+    text-align: right;
+    margin-right: 20px; /* Adjust the spacing from the right side */
+  }
+  
+  .footer-contact h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #7D9D9C;
+  }
+  
+  .footer-contact p {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #3A4444;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact p:first-child {
+    margin-top: 20px;
+  }
+  
+  .footer-contact p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .footer-contact p i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #7D9D9C;
+  }
+  
+  /* Place "Location" and "Laith Smirat & Partner Complex" in the same row */
+  .location-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-text {
+    margin-left: 10px;
+  }
+  

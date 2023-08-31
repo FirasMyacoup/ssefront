@@ -1,0 +1,179 @@
+/* about.css */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.about-intro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-intro-text {
+  flex: 1;
+}
+
+.about-intro-text h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-intro-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+.about-intro-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-values h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-values p {
+  font-size: 16px;
+  color: #666;
+}
+
+.about-team {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-team-text {
+  margin-bottom: 20px;
+}
+
+.team-member-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-member-card {
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 250px;
+  text-align: center;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-image img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.team-member-card h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.team-member-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.about-contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-contact p {
+  font-size: 16px;
+  color: #666;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7D9D9C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #576F72;
+}
+
+/* about.css */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.about-intro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-intro-text {
+  flex: 1;
+}
+
+.about-intro-text h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-intro-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+.about-intro-image img {
+  max-width: 100%;
+  max-height: 300px; /* Adjust the maximum height as needed */
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this to your existing CSS or create a new CSS file */
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7D9D9C;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #577672;
+}
+
+.button-text {
+  margin-right: 10px;
+}
+
+.button-icon {
+  font-size: 1.2rem;
+}
+

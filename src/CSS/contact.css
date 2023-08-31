@@ -1,0 +1,78 @@
+/* contact.css */
+.contact {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactHeader {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contactBodyContainer {
+    flex-wrap: wrap;
+  }
+  
+  .contactForm {
+    flex: 1;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+  }
+  
+  .contactForm label {
+    font-weight: bold;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .contactForm textarea {
+    resize: vertical;
+  }
+  
+  .cartBtn {
+    background-color: #7D9D9C;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cartBtn:hover {
+    background-color: #5f7d7c;
+  }
+  
+  .addressMap {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .contactForm,
+    .addressMap {
+      flex: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
