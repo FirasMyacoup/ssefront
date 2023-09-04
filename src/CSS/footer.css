@@ -13,21 +13,34 @@
     align-items: flex-start;
   }
   
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+ /* CSS for footer-links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-direction: column; /* Place links and encouragement vertically */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff; /* Link color */
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
   
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
+
   
-  .footer-links a:hover {
-    color: #7d9d9c;
-  }
+  background-color: #726e6e; 
+   border-radius: 5px; 
+  padding: 5px 10px; 
+}
+
+.footer-links a:hover {
+  color: #3cff00; 
+}
+
   
   
   
@@ -104,4 +117,33 @@
   .location-text {
     margin-left: 10px;
   }
+  .footer-encouragement p {
+  font-size: 18px; /* Font size for the encouraging sentence */
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Spacing above and below the sentence */
+}
   
+
+
+
+
+
+
+
+
+
+
+.footer-encouragement {
+  text-align: center;
+}
+
+.footer-encouragement p {
+  font-size: 18px; /* Font size for the encouraging sentence */
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Spacing above and below the sentence */
+  background-color: #333; /* Background color for the encouragement */
+  color: #fff; /* Text color for the encouragement */
+  border-radius: 10px; /* Rounded corners for the encouragement box */
+}
+
+/* Add more styles as needed */
