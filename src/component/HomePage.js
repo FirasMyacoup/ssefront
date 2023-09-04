@@ -1,5 +1,11 @@
 import React from 'react';
 import '../CSS/HomePage.css';
+import '../component/HomePageCard'
+import { Link } from 'react-router-dom';
+
+
+
+
 
 const HomePage = () => {
   return (
@@ -24,10 +30,6 @@ const HomePage = () => {
           <p>Best serve the Jordanian and MENA markets, provide exceptional service experience. Provide unique engineering solutions tailor made to satisfy customer needs.</p>
         </div>
         <div className="strategy-item">
-          <h3>Values</h3>
-          <p>Deliver what we promise, exceed expectations, environmental and safety awareness.</p>
-        </div>
-        <div className="strategy-item">
           <h3>Business goals & objectives</h3>
           <p>Expand in the Jordanian market and Middle East. Represent reputable multi-brands products. Specialize in sophisticated, and niche markets and special advanced technological equipment’s. Top engineering service providers.</p>
         </div>
@@ -35,6 +37,12 @@ const HomePage = () => {
           <h3>Business strategy</h3>
           <p>Organic growth in the market, not only following the market, but creating demand.</p>
         </div>
+
+        <div className="button-container">
+        <Link to="/projects">
+          <button className="button">View Projects</button>
+        </Link>
+      </div>
         
       </div>
 

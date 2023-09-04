@@ -1,0 +1,72 @@
+/* Apply CSS to the overall page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header section */
+  .strategy-item {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .strategy-item h3 {
+    font-size: 24px;
+  }
+  
+  .strategy-item p {
+    font-size: 16px;
+  }
+  
+  /* Style the card container */
+  .home-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Style individual cards */
+  .home-page .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Adjust the card width based on your layout */
+    box-sizing: border-box;
+  }
+  
+  .home-page .card h4 {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .home-page .card p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .button-projects {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none; /* Remove underline from the button */
+  }
+
+  .strategy-button{
+    background-color: #cecbcb;
+    color: #000000;
+    text-align: center;
+    
+
+  }
+  

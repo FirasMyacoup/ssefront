@@ -3,6 +3,21 @@ import { Link } from 'react-router-dom';
 import { FaEnvelope, FaPhone, FaMapMarker } from 'react-icons/fa'; // Import the required icons
 import '../CSS/footer.css'; // Import your CSS file for styling
 
+const encouragingSentences = [
+  "Stay motivated and keep pushing forward!",
+  "Believe in yourself and your abilities.",
+  "Every challenge is an opportunity for growth.",
+  "You've got this!",
+  "Success is a journey, not a destination.",
+  "Keep your dreams alive!",
+  // Add more encouraging sentences as needed
+];
+function getRandomSentence() {
+  const randomIndex = Math.floor(Math.random() * encouragingSentences.length);
+  return encouragingSentences[randomIndex];
+}
+
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,7 +26,12 @@ const Footer = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/Projects">Projects</Link>
+          <Link to="/Gallery">images gallery</Link>
+          
         </div>
+
+        <p>{getRandomSentence()}</p>
         <div className="footer-contact">
   <h3>Contact Us</h3>
   <p><FaEnvelope /> Email: commercial@ssem.co</p>

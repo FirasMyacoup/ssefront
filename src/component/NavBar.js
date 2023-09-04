@@ -46,14 +46,23 @@ class NavBar extends Component {
           <MDBNavbarNav className={`collapse navbar-collapse justify-content-center ${show}`}>
             <div className="nav-links">
               <Link to="/Homepage" className="nav-link">
-                HomePage🏚
+                HomePage
               </Link>
               <Link to="/about" className="nav-link">
-                About us 👀
+                About us 
               </Link>
               <Link to="/Contact" className="nav-link">
-                Contact us🤩
+                Contact us
               </Link>
+              <Link to="/Projects" className="nav-link">
+                Projects
+              </Link>
+              <Link to="/gallery" className="nav-link">
+                images gallery
+              </Link>
+              
+              
+             
             </div>
           </MDBNavbarNav>
         </MDBContainer>
