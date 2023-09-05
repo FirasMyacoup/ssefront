@@ -28,6 +28,8 @@ const Footer = () => {
           <Link to="/contact">Contact</Link>
           <Link to="/Projects">Projects</Link>
           <Link to="/Gallery">images gallery</Link>
+          <Link to="/Market">our shop</Link>
+
           
         </div>
 
