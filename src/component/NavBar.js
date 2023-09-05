@@ -60,6 +60,10 @@ class NavBar extends Component {
               <Link to="/gallery" className="nav-link">
                 images gallery
               </Link>
+
+              <Link to="/Market" className="nav-link">
+                our Store
+              </Link>
               
               
              

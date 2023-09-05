@@ -269,6 +269,14 @@ class Contact extends Component {
       return;
     }
 
+    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    if (!emailRegex.test(email)) {
+      this.setState({
+        errors: { email: 'Please enter a valid email address.' },
+      });
+      return;
+    }
+
     axios
       .post('http://localhost:3001/submit', {
         firstName,
@@ -361,6 +369,8 @@ class Contact extends Component {
                     onChange={this.handleChange}
                     placeholder="Enter a valid email"
                   />
+                   {errors.email && (
+    <p className="text-danger">{errors.email}</p> )}
                 </Form.Group>
               </Row>
               <Row className="mb-3"> {/* Added subject field */}

@@ -6,6 +6,7 @@ import Contact from  "./component/contact";
 import HomePage from "./component/HomePage"
 import Projects from "./component/Projects";
 import Gallery from "./component/Gallery";
+import Market from "./component/Market";
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -27,6 +28,8 @@ function App() {
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/Projects" element={<Projects />}></Route>
           <Route exact path="/gallery" element={<Gallery />}></Route>
+          <Route exact path="/Market" element={<Market/>}></Route>
+
 
           
           
