@@ -3,6 +3,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../CSS/Market.css';
+import logo from '../assets/logo.png'
 
 const Market = () => {
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -11,18 +12,41 @@ const Market = () => {
   const [isValidEmail, setIsValidEmail] = useState(true);
 
   const products = [
-    { id: 1, name: 'Product A', price: 10, image: 'product-a.jpg' },
-    { id: 2, name: 'Product B', price: 15, image: 'product-b.jpg' },
-    { id: 3, name: 'Product C', price: 20, image: 'product-c.jpg' },
+    { id: 1, name: 'Product A', price: 10, image: logo },
+    { id: 2, name: 'Product B', price: 15, image: logo },
+    { id: 3, name: 'Product C', price: 20, image: logo },
+    { id: 4, name: 'Product D', price: 25, image: logo },
+    { id: 5, name: 'Product E', price: 30, image: logo },
+    { id: 6, name: 'Product F', price: 40, image: logo },
   ];
 
   const handleBuyClick = (product) => {
-    setSelectedProducts((prevSelectedProducts) => [...prevSelectedProducts, product]);
+    const productIndex = selectedProducts.findIndex((p) => p.id === product.id);
+
+    if (productIndex !== -1) {
+      const updatedProducts = [...selectedProducts];
+      updatedProducts[productIndex].count++;
+      setSelectedProducts(updatedProducts);
+    } else {
+      setSelectedProducts((prevSelectedProducts) => [
+        ...prevSelectedProducts,
+        { ...product, count: 1 },
+      ]);
+    }
   };
 
-  const handleRemoveProduct = (productToRemove) => {
+  const handleRemoveProduct = (productIdToRemove) => {
     setSelectedProducts((prevSelectedProducts) =>
-      prevSelectedProducts.filter((product) => product.id !== productToRemove.id)
+      prevSelectedProducts.map((product) => {
+        if (product.id === productIdToRemove) {
+          if (product.count > 1) {
+            return { ...product, count: product.count - 1 };
+          }
+          // If count is 1, remove the product from the basket
+          return null;
+        }
+        return product;
+      }).filter(Boolean) // Remove null entries
     );
   };
 
@@ -51,16 +75,12 @@ const Market = () => {
     axios
       .post('http://localhost:3001/send-email', { userEmail, selectedProducts })
       .then(() => {
+        console.log('Email sent successfully');
         setIsConfirmationSent(true);
-        toast.success('Thanks for shopping with us! We will contact you shortly.', {
-          position: toast.POSITION.TOP_CENTER,
-        });
+        setSelectedProducts([]); // Clear the selected products
       })
       .catch((error) => {
         console.error('Email sending failed:', error);
-        toast.error('Email sending failed. Please try again later.', {
-          position: toast.POSITION.TOP_CENTER,
-        });
       });
   };
 
@@ -87,8 +107,8 @@ const Market = () => {
           <ul>
             {selectedProducts.map((product) => (
               <li key={product.id}>
-                {product.name}
-                <button className="remove-button" onClick={() => handleRemoveProduct(product)}>
+                {product.name} (x{product.count})
+                <button className="remove-button" onClick={() => handleRemoveProduct(product.id)}>
                   Remove
                 </button>
               </li>
@@ -100,12 +120,14 @@ const Market = () => {
             value={userEmail}
             onChange={handleEmailChange}
           />
-          <button onClick={handleConfirmPurchase}>Confirm Purchase</button>
+          <button className='confirm-button' onClick={handleConfirmPurchase}>Confirm Purchase</button>
         </div>
       )}
 
       {isConfirmationSent && (
-        <p>Confirmation email sent to the company. They will contact you shortly.</p>
+        <div className="confirmation-message">
+          <p>Thanks for wanting to shop with us! We will contact with you shortly.</p>
+        </div>
       )}
 
       <ToastContainer />

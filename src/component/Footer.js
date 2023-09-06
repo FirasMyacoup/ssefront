@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaEnvelope, FaPhone, FaMapMarker } from 'react-icons/fa'; // Import the required icons
+import { FaEnvelope, FaPhone, FaMapMarker, FaFacebookSquare } from 'react-icons/fa'; // Import the required icons
 import '../CSS/footer.css'; // Import your CSS file for styling
 
 const encouragingSentences = [
@@ -28,6 +28,8 @@ const Footer = () => {
           <Link to="/contact">Contact</Link>
           <Link to="/Projects">Projects</Link>
           <Link to="/Gallery">images gallery</Link>
+          <Link to="/Market">our shop</Link>
+
           
         </div>
 
@@ -37,8 +39,14 @@ const Footer = () => {
   <p><FaEnvelope /> Email: commercial@ssem.co</p>
   <p><FaPhone /> Phone: +962-6-4722033</p>
   <div className="location-container">
-    <p><FaMapMarker /> Location:</p>
+  <p><a href="https://www.google.com/maps/place/Specialized+Systems+For+Electro-Mechanics+Co+(SSEMco)/@32.0014453,35.7841787,17z/data=!3m1!4b1!4m6!3m5!1s0x151ca1cd397f6a01:0xb6b2c96be9293fc!8m2!3d32.0014408!4d35.7816038!16s%2Fg%2F12qgwv_7f?entry=ttu" target="_blank" rel="noopener noreferrer"><FaMapMarker /> Location:</a></p>
     <p className="location-text">Fuhies - King Abdullah II St./Laith Smirat & Partner Complex</p>
+
+    <p>
+    <a href="https://web.facebook.com/SpecializedSystem" target="_blank" rel="noopener noreferrer">
+      <FaFacebookSquare /> Facebook Page
+    </a>
+  </p>
   </div>
  
 </div>
