@@ -15,8 +15,10 @@ const HomePageCard = ({ title, content,  }) => {
         <h3>{title}</h3>
       </div>
       {expanded && <p>{content}</p>}
+     
     </div>
   );
 };
+
 
 export default HomePageCard;

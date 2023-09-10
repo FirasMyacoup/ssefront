@@ -9,7 +9,13 @@ import { Link } from 'react-router-dom';
 const cardData = [
     {
       title: "Construction of Air Traffic Control Tower (ATCT) UD 2.4) (2023 -2024)",
-      content:"Subcontract for The Morganti Group, Inc. for the following services: 1▪ Supply and install new Airfield ground lighting control and monitoring system (ALCMS)at New Air Traffic Control Tower 2▪ Supply and install new fibre Optic Network to serve ALCMS 3▪ Supply and install new Fiber optic Network to serve RADARAPPROACH CONTROL DATA connection from ExstingATCT to New ATCT  #Customer: The Morganti Group, Inc . ",
+      content:`Subcontract for The Morganti Group, Inc. for the following services: 
+      ▪ Supply and install new Airfield ground lighting control and monitoring system (ALCMS)at New Air Traffic Control Tower ▪ Supply and install new fibre Optic Network to serve ALCMS 
+      ▪ Supply and install new Fiber optic Network to serve RADARAPPROACH CONTROL DATA connection from ExstingATCT to New ATCT
+        -Customer: The Morganti Group, Inc . `,
+    
+    
+    
     },
     {
       title: " Upgrade Airfield Ground Lighting control and monitoring system at King Faisal Airbase – AlJafer – Jordan",
@@ -25,7 +31,7 @@ const cardData = [
       
       
       
-      #Customer: Royal Jordanian Airforce `,
+      -Customer: Royal Jordanian Airforce `,
     },
     {
       title:"King Hussein International Airport West Taxiway Project (2020)",
@@ -40,7 +46,7 @@ const cardData = [
       ▪ Design and set of project documents
       ▪ Design and set of project documents for Airfield ground
       lighting control and monitoring system
-      #  Customer: AEC – to Aqaba Development Company. `
+      - Customer: AEC – to Aqaba Development Company. `
   
   
     },{
@@ -54,7 +60,7 @@ const cardData = [
   commission’s
   
   
-  # Customer: Hiba Engineering Establishment – United Stat Airforce
+  - Customer: Hiba Engineering Establishment – United Stat Airforce
   Life Cycle Management Center (USALCMC)`
     },{
       title:"UD 2.4 Package 2 Jordan Project, Muaffaq Salti Airbase ,AzraqJordan ( 2020-2023)    ",
@@ -65,7 +71,8 @@ const cardData = [
       ▪ AGL Substation equipment modification (Electrical)
       ▪ Airfield ground lighting control and monitoring system
       modification and Fiber Optic network construction
-      # Customer: American International Contractor.Inc. `
+
+      - Customer: American International Contractor.Inc. `
     },{
       title:"Runway 31/13 repair at Muaffaq Salti Airbase, Azraq-Jordan (2017-2020)",
       content:`Subcontract for American International
@@ -76,45 +83,46 @@ const cardData = [
       Civil)
       ▪ Aircraft Arresting system (BAK 12) vaults Electrical and
       mechanical infrastructure Supply and installation
-      # Customer: American International Contractor. Inc.`
+      - Customer: American International Contractor. Inc.`
     },{
       title:"Helipad Lighting System, -Aqaba – Jordan (2020)",
       content:`Subcontractor for Abu Shreikh Contracting
       Company, for the supply and installation of Airfield ground lighting
       system for Two Helipad at south beach – Aqaba,
-      # Customer: Abu Shreikh contracting company / General Intelligence
+      - Customer: Abu Shreikh contracting company / General Intelligence
       Directorate (Jordan)`
+      
     },{
       title:"Queen Alia Inter. Airport ,North Runway Rehabilitation Project ,(2016-  2017)",
       content:`Subcontractor for Butec & Al-Tarawneh JV for
       Airfield ground lighting and Related Civil Work installation, Testing
       & commissioning
-      # Customer: Butec and Altarawneh contracting company JV`
+      - Customer: Butec and Altarawneh contracting company JV`
     },{
       title:"Sahal Nsab Runway Air Strip(2017)",
       content:` Subcontractor for HIBA engineering Establishment for Design,
       Supply and installation of Solar Airfield ground lighting Systems
-      # Customer: HIBA Engineering Establishment `
+      - Customer: HIBA Engineering Establishment `
     },{
       title:"Queen Alia Inter. Airport, North Runway Rehabilitation Project, (2017)",
       content:`Project description: Subcontractor for Butec & Al-Tarawneh JV for
       installation 3.3 KV MV Substation and MV Ring Network installation,
       Testing and commissioning
-      # Customer: Butec JV AlTarawneh
+      - Customer: Butec JV AlTarawneh
       `
     },{
       title:"Cairo International Airport, North Runway Project & Related Taxiways(2015-2016)",
       content:` Project description: Supervision of Airfield ground lighting
       Equipment installation with TKH, Hella Induperm airfield ground
       lighting suppliers
-      #  Customer: TKH Group, Airfield lighting supplier & ORASCOM
+      - Customer: TKH Group, Airfield lighting supplier & ORASCOM
       `
     },{
       title:" Land scape lighting project for the main entrance at QAIA (2014)",
       content:`Project description: Supply and install LED lighting fixture and
       power network for land scape lighting at the main entrance 2 KM
       length, of Queen Alia Inter. Airport
-      # Customer: Airport International Group`
+      - Customer: Airport International Group`
     }
     // Add more card objects as needed
   ];
