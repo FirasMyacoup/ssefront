@@ -5,10 +5,11 @@ import "../CSS/gallery.css"
 import image1 from '../assets/image1.jpg';
 import image2 from '../assets/SSEM.jpg';
 import image3 from '../assets/logo.png'
+import image4 from '../assets/logo.png'
 
 // Import other necessary components and data
 
-const images = [image1, image2, image3]; // Add more images as needed
+const images = [image1, image2, image3,image2]; // Add more images as needed
 
 const Gallery = () => {
   return (
